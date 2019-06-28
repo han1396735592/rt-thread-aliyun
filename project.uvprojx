@@ -334,7 +334,7 @@
               <MiscControls />
               <Define>MQTT_DIRECT, IOTX_NET_INIT_WITH_PK_EXT, MQTT_COMM_ENABLED, USE_HAL_DRIVER, STM32F407xx, IOTX_WITHOUT_TLS, IOTX_WITHOUT_ITLS, RT_USING_ARM_LIBC, _PLATFORM_IS_RTTHREAD_</Define>
               <Undefine />
-              <IncludePath>.;..\..\..\include;applications;.;board;board\CubeMX_Config\Inc;board\ports;..\libraries\HAL_Drivers;..\libraries\HAL_Drivers\config;packages\ali-iotkit-latest\iotkit-embedded\src\packages\iot-coap-c;packages\ali-iotkit-latest\iotkit-embedded\src\log\LITE-log;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT\MQTTPacket;packages\ali-iotkit-latest\iotkit-embedded\src\packages\LITE-utils;packages\ali-iotkit-latest\iotkit-embedded\src\system\iotkit-system;packages\ali-iotkit-latest\iotkit-embedded\src\utils\misc;packages\ali-iotkit-latest\iotkit-embedded\src\utils\digest;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\exports;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\imports;packages\mbedtls-v2.6.0\mbedtls\include;packages\mbedtls-v2.6.0\mbedtls\include\mbedtls;packages\mbedtls-v2.6.0\ports\inc;..\..\..\libcpu\arm\common;..\..\..\libcpu\arm\cortex-m4;..\..\..\components\dfs\include;..\..\..\components\dfs\filesystems\devfs;..\..\..\components\drivers\include;..\..\..\components\drivers\include;..\..\..\components\drivers\include;..\..\..\components\drivers\include;..\..\..\components\drivers\include;..\..\..\components\finsh;..\..\..\components\libc\compilers\armlibc;..\..\..\components\libc\compilers\common;..\..\..\components\net\lwip-2.0.2\src;..\..\..\components\net\lwip-2.0.2\src\include;..\..\..\components\net\lwip-2.0.2\src\include\ipv4;..\..\..\components\net\lwip-2.0.2\src\arch\include;..\..\..\components\net\lwip-2.0.2\src\include\netif;..\..\..\components\net\netdev\include;..\..\..\components\net\sal_socket\include;..\..\..\components\net\sal_socket\include\socket;..\..\..\components\net\sal_socket\impl;..\..\..\components\net\sal_socket\include\dfs_net;..\..\..\components\net\sal_socket\include\dfs_net\sys_select;..\..\..\components\net\sal_socket\include\socket\sys_socket;..\libraries\STM32F4xx_HAL\STM32F4xx_HAL_Driver\Inc;..\libraries\STM32F4xx_HAL\CMSIS\Device\ST\STM32F4xx\Include;..\libraries\STM32F4xx_HAL\CMSIS\Include</IncludePath>
+              <IncludePath>.;..\..\..\include;applications;.;board;board\CubeMX_Config\Inc;board\ports;..\libraries\HAL_Drivers;..\libraries\HAL_Drivers\config;packages\ali-iotkit-latest\iotkit-embedded\src\packages\iot-coap-c;packages\ali-iotkit-latest\iotkit-embedded\src\log\LITE-log;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT\MQTTPacket;packages\ali-iotkit-latest\iotkit-embedded\src\packages\LITE-utils;packages\ali-iotkit-latest\iotkit-embedded\src\system\iotkit-system;packages\ali-iotkit-latest\iotkit-embedded\src\utils\misc;packages\ali-iotkit-latest\iotkit-embedded\src\utils\digest;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\exports;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\imports;packages\cJSON-v1.0.2;packages\mbedtls-v2.6.0\mbedtls\include;packages\mbedtls-v2.6.0\mbedtls\include\mbedtls;packages\mbedtls-v2.6.0\ports\inc;..\..\..\libcpu\arm\common;..\..\..\libcpu\arm\cortex-m4;..\..\..\components\dfs\include;..\..\..\components\dfs\filesystems\devfs;..\..\..\components\dfs\filesystems\ramfs;..\..\..\components\drivers\include;..\..\..\components\drivers\include;..\..\..\components\drivers\include;..\..\..\components\drivers\include;..\..\..\components\drivers\include;..\..\..\components\finsh;..\..\..\components\libc\compilers\armlibc;..\..\..\components\libc\compilers\common;..\..\..\components\net\lwip-2.0.2\src;..\..\..\components\net\lwip-2.0.2\src\include;..\..\..\components\net\lwip-2.0.2\src\include\ipv4;..\..\..\components\net\lwip-2.0.2\src\arch\include;..\..\..\components\net\lwip-2.0.2\src\include\netif;..\..\..\components\net\netdev\include;..\..\..\components\net\sal_socket\include;..\..\..\components\net\sal_socket\include\socket;..\..\..\components\net\sal_socket\impl;..\..\..\components\net\sal_socket\include\dfs_net;..\..\..\components\net\sal_socket\include\dfs_net\sys_select;..\..\..\components\net\sal_socket\include\socket\sys_socket;..\libraries\STM32F4xx_HAL\STM32F4xx_HAL_Driver\Inc;..\libraries\STM32F4xx_HAL\CMSIS\Device\ST\STM32F4xx\Include;..\libraries\STM32F4xx_HAL\CMSIS\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -438,6 +438,13 @@
               <FileName>mem.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\src\mem.c</FilePath>
+            </File>
+          </Files>
+          <Files>
+            <File>
+              <FileName>memheap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\src\memheap.c</FilePath>
             </File>
           </Files>
           <Files>
@@ -867,6 +874,30 @@
               </Cads>
             </GroupArmAds>
           </GroupOption>
+        </Group>
+        <Group>
+          <GroupName>cJSON</GroupName>
+          <Files>
+            <File>
+              <FileName>cJSON.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\cJSON-v1.0.2\cJSON.c</FilePath>
+            </File>
+          </Files>
+          <Files>
+            <File>
+              <FileName>cJSON_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\cJSON-v1.0.2\cJSON_port.c</FilePath>
+            </File>
+          </Files>
+          <Files>
+            <File>
+              <FileName>cJSON_util.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\cJSON-v1.0.2\cJSON_util.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>mbedtls</GroupName>
@@ -1483,6 +1514,13 @@
               <FileName>devfs.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\components\dfs\filesystems\devfs\devfs.c</FilePath>
+            </File>
+          </Files>
+          <Files>
+            <File>
+              <FileName>dfs_ramfs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\components\dfs\filesystems\ramfs\dfs_ramfs.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -30,6 +30,7 @@
 /* Memory Management */
 
 #define RT_USING_MEMPOOL
+#define RT_USING_MEMHEAP
 #define RT_USING_SMALL_MEM
 #define RT_USING_HEAP
 
@@ -79,6 +80,7 @@
 #define DFS_FILESYSTEM_TYPES_MAX 2
 #define DFS_FD_MAX 16
 #define RT_USING_DFS_DEVFS
+#define RT_USING_DFS_RAMFS
 
 /* Device Drivers */
 
@@ -188,6 +190,8 @@
 
 /* IoT - internet of things */
 
+#define PKG_USING_CJSON
+#define PKG_USING_CJSON_V102
 
 /* Wi-Fi */
 
