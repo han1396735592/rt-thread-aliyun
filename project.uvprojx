@@ -332,7 +332,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls />
-              <Define>MQTT_DIRECT, IOTX_NET_INIT_WITH_PK_EXT, MQTT_COMM_ENABLED, USE_HAL_DRIVER, STM32F407xx, IOTX_WITHOUT_TLS, IOTX_WITHOUT_ITLS, RT_USING_ARM_LIBC, _PLATFORM_IS_RTTHREAD_</Define>
+              <Define>MQTT_DIRECT, IOTX_WITHOUT_ITLS, MQTT_COMM_ENABLED, USE_HAL_DRIVER, STM32F407xx, _PLATFORM_IS_RTTHREAD_, RT_USING_ARM_LIBC, IOTX_NET_INIT_WITH_PK_EXT</Define>
               <Undefine />
               <IncludePath>.;rt-thread\include;applications;.;board;board\CubeMX_Config\Inc;board\ports;libraries\HAL_Drivers;libraries\HAL_Drivers\config;packages\ali-iotkit-latest\iotkit-embedded\src\packages\iot-coap-c;packages\ali-iotkit-latest\iotkit-embedded\src\log\LITE-log;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT\MQTTPacket;packages\ali-iotkit-latest\iotkit-embedded\src\packages\LITE-utils;packages\ali-iotkit-latest\iotkit-embedded\src\system\iotkit-system;packages\ali-iotkit-latest\iotkit-embedded\src\utils\misc;packages\ali-iotkit-latest\iotkit-embedded\src\utils\digest;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\exports;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\imports;packages\cJSON-v1.0.2;packages\mbedtls-v2.6.0\mbedtls\include;packages\mbedtls-v2.6.0\mbedtls\include\mbedtls;packages\mbedtls-v2.6.0\ports\inc;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m4;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\dfs\filesystems\ramfs;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;rt-thread\components\libc\compilers\common;rt-thread\components\net\lwip-2.0.2\src;rt-thread\components\net\lwip-2.0.2\src\include;rt-thread\components\net\lwip-2.0.2\src\include\ipv4;rt-thread\components\net\lwip-2.0.2\src\arch\include;rt-thread\components\net\lwip-2.0.2\src\include\netif;rt-thread\components\net\netdev\include;rt-thread\components\net\sal_socket\include;rt-thread\components\net\sal_socket\include\socket;rt-thread\components\net\sal_socket\impl;rt-thread\components\net\sal_socket\include\dfs_net;rt-thread\components\net\sal_socket\include\dfs_net\sys_select;rt-thread\components\net\sal_socket\include\socket\sys_socket;libraries\STM32F4xx_HAL\STM32F4xx_HAL_Driver\Inc;libraries\STM32F4xx_HAL\CMSIS\Device\ST\STM32F4xx\Include;libraries\STM32F4xx_HAL\CMSIS\Include</IncludePath>
             </VariousControls>
@@ -860,6 +860,20 @@
               <FileName>HAL_UDP_rtthread.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\ali-iotkit-latest\ports\rtthread\HAL_UDP_rtthread.c</FilePath>
+            </File>
+          </Files>
+          <Files>
+            <File>
+              <FileName>HAL_DTLS_mbedtls.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\ali-iotkit-latest\ports\ssl\mbedtls\HAL_DTLS_mbedtls.c</FilePath>
+            </File>
+          </Files>
+          <Files>
+            <File>
+              <FileName>HAL_TLS_mbedtls.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\ali-iotkit-latest\ports\ssl\mbedtls\HAL_TLS_mbedtls.c</FilePath>
             </File>
           </Files>
           <GroupOption>
