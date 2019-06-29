@@ -21,8 +21,6 @@
 
 int main(void)
 {
-		rt_kprintf("hello");
-
     return RT_EOK;
 }
 
