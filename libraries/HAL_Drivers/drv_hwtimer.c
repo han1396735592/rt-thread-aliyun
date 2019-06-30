@@ -70,7 +70,7 @@ enum
 #ifdef BSP_USING_TIM17
     TIM17_INDEX,
 #endif
-
+};
 
 struct stm32_hwtimer
 {
@@ -78,7 +78,7 @@ struct stm32_hwtimer
     TIM_HandleTypeDef    tim_handle;
     IRQn_Type tim_irqn;
     char *name;
-}
+};
 
 static struct stm32_hwtimer stm32_hwtimer_obj[] =
 {

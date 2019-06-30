@@ -297,6 +297,36 @@ menu "On-chip Peripheral Drivers"
 endmenu
 
 menu "Board extended module Drivers"
+    menuconfig AT_DEVICE_USING_SIM800C
+        bool "enable AT_DEVICE_USING_SIM800C"
+        default y
+
+        if AT_DEVICE_USING_SIM800C
+
+            config SIM800C_SAMPLE_CLIENT_NAME
+                string "SIM800C_SAMPLE_CLIENT_NAME"
+                default "uart3"
+
+            config SIM800C_SAMPLE_POWER_PIN
+                int "SIM800C_SAMPLE_POWER_PIN"
+                default -1
+            config SIM800C_SAMPLE_STATUS_PIN
+                int "SIM800C_SAMPLE_STATUS_PIN"
+                default -1
+                
+            config SIM800C_SAMPLE_RECV_BUFF_LEN
+                int "SIM800C_SAMPLE_RECV_BUFF_LEN"
+                default 512
+                
+            config AT_DEVICE_SIM800C_SAMPLE
+                bool "enable AT_DEVICE_SIM800C_SAMPLE"
+                default y
+
+
+
+        endif
+
+
 
 endmenu
 

@@ -17,7 +17,6 @@
 #define RT_IDEL_HOOK_LIST_SIZE 4
 #define IDLE_THREAD_STACK_SIZE 1024
 #define RT_DEBUG
-#define RT_DEBUG_COLOR
 
 /* Inter-Thread communication */
 
@@ -30,7 +29,6 @@
 /* Memory Management */
 
 #define RT_USING_MEMPOOL
-#define RT_USING_MEMHEAP
 #define RT_USING_SMALL_MEM
 #define RT_USING_HEAP
 
@@ -39,7 +37,7 @@
 #define RT_USING_DEVICE
 #define RT_USING_CONSOLE
 #define RT_CONSOLEBUF_SIZE 128
-#define RT_CONSOLE_DEVICE_NAME "uart3"
+#define RT_CONSOLE_DEVICE_NAME "uart1"
 #define RT_VER_NUM 0x40002
 #define ARCH_ARM
 #define RT_USING_CPU_FFS
@@ -79,8 +77,19 @@
 #define DFS_FILESYSTEMS_MAX 2
 #define DFS_FILESYSTEM_TYPES_MAX 2
 #define DFS_FD_MAX 16
+#define RT_USING_DFS_ELMFAT
+
+/* elm-chan's FatFs, Generic FAT Filesystem Module */
+
+#define RT_DFS_ELM_CODE_PAGE 437
+#define RT_DFS_ELM_WORD_ACCESS
+#define RT_DFS_ELM_USE_LFN_3
+#define RT_DFS_ELM_USE_LFN 3
+#define RT_DFS_ELM_MAX_LFN 255
+#define RT_DFS_ELM_DRIVES 2
+#define RT_DFS_ELM_MAX_SECTOR_SIZE 512
+#define RT_DFS_ELM_REENTRANT
 #define RT_USING_DFS_DEVFS
-#define RT_USING_DFS_RAMFS
 
 /* Device Drivers */
 
@@ -92,9 +101,14 @@
 #define RT_USING_SERIAL
 #define RT_SERIAL_USING_DMA
 #define RT_SERIAL_RB_BUFSZ 64
-#define RT_USING_HWTIMER
 #define RT_USING_PIN
 #define RT_USING_RTC
+#define RT_USING_SDIO
+#define RT_SDIO_STACK_SIZE 512
+#define RT_SDIO_THREAD_PRIORITY 15
+#define RT_MMCSD_STACK_SIZE 1024
+#define RT_MMCSD_THREAD_PREORITY 22
+#define RT_MMCSD_MAX_PARTITION 16
 
 /* Using Hardware Crypto drivers */
 
@@ -119,6 +133,7 @@
 /* protocol stack implement */
 
 #define SAL_USING_LWIP
+#define SAL_USING_AT
 #define SAL_USING_TLS
 #define SAL_USING_POSIX
 
@@ -174,11 +189,16 @@
 #define LWIP_NETIF_LOOPBACK 0
 #define RT_LWIP_USING_PING
 
-/* Modbus master and slave stack */
-
-
 /* AT commands */
 
+#define RT_USING_AT
+#define AT_DEBUG
+#define AT_USING_CLIENT
+#define AT_CLIENT_NUM_MAX 1
+#define AT_USING_SOCKET
+#define AT_USING_CLI
+#define AT_CMD_MAX_LEN 128
+#define AT_SW_VERSION_NUM 0x10300
 
 /* VBUS(Virtual Software BUS) */
 
@@ -200,6 +220,16 @@
 
 /* Wiced WiFi */
 
+#define PKG_USING_AT_DEVICE
+#define PKG_AT_INIT_BY_THREAD
+#define AT_DEVICE_SIM800C
+#define AT_DEVICE_SOCKETS_NUM 6
+#define AT_DEVICE_NAME "uart3"
+#define AT_DEVICE_RECV_BUFF_LEN 8192
+#define AT_DEVICE_POWER_PIN -1
+#define AT_DEVICE_STATUS_PIN -1
+#define PKG_USING_AT_DEVICE_LATEST_VERSION
+#define PKG_AT_DEVICE_VER_NUM 0x99999
 
 /* IoT Cloud */
 
@@ -239,6 +269,7 @@
 
 /* peripheral libraries and drivers */
 
+#define SDIO_MAX_FREQ 1000000
 
 /* miscellaneous packages */
 
@@ -257,8 +288,7 @@
 #define BSP_USING_USB_TO_USART
 #define BSP_USING_COM2
 #define BSP_USING_COM3
-#define PHY_USING_LAN8720A
-#define BSP_USING_ETH
+#define BSP_USING_SDCARD
 
 /* On-chip Peripheral Drivers */
 
@@ -267,8 +297,16 @@
 #define BSP_USING_UART1
 #define BSP_USING_UART2
 #define BSP_USING_UART3
+#define BSP_USING_UART4
+#define BSP_USING_SDIO
 
 /* Board extended module Drivers */
 
+#define AT_DEVICE_USING_SIM800C
+#define SIM800C_SAMPLE_CLIENT_NAME "uart3"
+#define SIM800C_SAMPLE_POWER_PIN -1
+#define SIM800C_SAMPLE_STATUS_PIN -1
+#define SIM800C_SAMPLE_RECV_BUFF_LEN 512
+#define AT_DEVICE_SIM800C_SAMPLE
 
 #endif
