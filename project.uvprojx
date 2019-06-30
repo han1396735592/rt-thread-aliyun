@@ -362,7 +362,7 @@
               <MiscControls />
               <Define>MQTT_DIRECT, IOTX_WITHOUT_ITLS, MQTT_COMM_ENABLED, USE_HAL_DRIVER, STM32F407xx, _PLATFORM_IS_RTTHREAD_, RT_USING_ARM_LIBC, IOTX_NET_INIT_WITH_PK_EXT</Define>
               <Undefine />
-              <IncludePath>.;rt-thread\include;applications;.;board;board\CubeMX_Config\Inc;board\ports;libraries\HAL_Drivers;libraries\HAL_Drivers\config;packages\ali-iotkit-latest\iotkit-embedded\src\packages\iot-coap-c;packages\ali-iotkit-latest\iotkit-embedded\src\log\LITE-log;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT\MQTTPacket;packages\ali-iotkit-latest\iotkit-embedded\src\packages\LITE-utils;packages\ali-iotkit-latest\iotkit-embedded\src\system\iotkit-system;packages\ali-iotkit-latest\iotkit-embedded\src\utils\misc;packages\ali-iotkit-latest\iotkit-embedded\src\utils\digest;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\exports;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\imports;packages\at_device-latest\inc;packages\at_device-latest\class\sim800c;packages\cJSON-v1.0.2;packages\mbedtls-v2.6.0\mbedtls\include;packages\mbedtls-v2.6.0\mbedtls\include\mbedtls;packages\mbedtls-v2.6.0\ports\inc;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m4;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\dfs\filesystems\elmfat;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;rt-thread\components\net\at\at_socket;rt-thread\components\net\lwip-2.0.2\src;rt-thread\components\net\lwip-2.0.2\src\include;rt-thread\components\net\lwip-2.0.2\src\include\ipv4;rt-thread\components\net\lwip-2.0.2\src\arch\include;rt-thread\components\net\lwip-2.0.2\src\include\netif;rt-thread\components\net\netdev\include;rt-thread\components\net\sal_socket\include;rt-thread\components\net\sal_socket\include\socket;rt-thread\components\net\sal_socket\impl;rt-thread\components\net\sal_socket\include\dfs_net;rt-thread\components\net\sal_socket\include\dfs_net\sys_select;rt-thread\components\net\sal_socket\include\socket\sys_socket;libraries\STM32F4xx_HAL\STM32F4xx_HAL_Driver\Inc;libraries\STM32F4xx_HAL\CMSIS\Device\ST\STM32F4xx\Include;libraries\STM32F4xx_HAL\CMSIS\Include</IncludePath>
+              <IncludePath>.;rt-thread\include;applications;.;board;board\CubeMX_Config\Inc;board\ports;libraries\HAL_Drivers;libraries\HAL_Drivers\config;packages\ali-iotkit-latest\iotkit-embedded\src\packages\iot-coap-c;packages\ali-iotkit-latest\iotkit-embedded\src\log\LITE-log;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT;packages\ali-iotkit-latest\iotkit-embedded\src\mqtt\Link-MQTT\MQTTPacket;packages\ali-iotkit-latest\iotkit-embedded\src\packages\LITE-utils;packages\ali-iotkit-latest\iotkit-embedded\src\system\iotkit-system;packages\ali-iotkit-latest\iotkit-embedded\src\utils\misc;packages\ali-iotkit-latest\iotkit-embedded\src\utils\digest;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\exports;packages\ali-iotkit-latest\iotkit-embedded\src\sdk-impl\imports;packages\at_device-latest\inc;packages\at_device-latest\class\sim800c;packages\cJSON-v1.0.2;packages\mbedtls-v2.6.0\mbedtls\include;packages\mbedtls-v2.6.0\mbedtls\include\mbedtls;packages\mbedtls-v2.6.0\ports\inc;packages\netutils-latest\ntp;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m4;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\dfs\filesystems\elmfat;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;rt-thread\components\net\at\at_socket;rt-thread\components\net\lwip-2.0.2\src;rt-thread\components\net\lwip-2.0.2\src\include;rt-thread\components\net\lwip-2.0.2\src\include\ipv4;rt-thread\components\net\lwip-2.0.2\src\arch\include;rt-thread\components\net\lwip-2.0.2\src\include\netif;rt-thread\components\net\netdev\include;rt-thread\components\net\sal_socket\include;rt-thread\components\net\sal_socket\include\socket;rt-thread\components\net\sal_socket\impl;rt-thread\components\net\sal_socket\include\dfs_net;rt-thread\components\net\sal_socket\include\dfs_net\sys_select;rt-thread\components\net\sal_socket\include\socket\sys_socket;libraries\STM32F4xx_HAL\STM32F4xx_HAL_Driver\Inc;libraries\STM32F4xx_HAL\CMSIS\Device\ST\STM32F4xx\Include;libraries\STM32F4xx_HAL\CMSIS\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -562,6 +562,13 @@
               <FileName>drv_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>libraries\HAL_Drivers\drv_usart.c</FilePath>
+            </File>
+          </Files>
+          <Files>
+            <File>
+              <FileName>drv_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>libraries\HAL_Drivers\drv_rtc.c</FilePath>
             </File>
           </Files>
           <Files>
@@ -1482,6 +1489,16 @@
               <FileName>tls_net.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\mbedtls-v2.6.0\ports\src\tls_net.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>NetUtils</GroupName>
+          <Files>
+            <File>
+              <FileName>ntp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\netutils-latest\ntp\ntp.c</FilePath>
             </File>
           </Files>
         </Group>

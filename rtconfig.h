@@ -103,6 +103,9 @@
 #define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_PIN
 #define RT_USING_RTC
+#define RTC_SYNC_USING_NTP
+#define RTC_NTP_FIRST_SYNC_DELAY 30
+#define RTC_NTP_SYNC_PERIOD 3600
 #define RT_USING_SDIO
 #define RT_SDIO_STACK_SIZE 512
 #define RT_SDIO_THREAD_PRIORITY 15
@@ -220,6 +223,13 @@
 
 /* Wiced WiFi */
 
+#define PKG_USING_NETUTILS
+#define PKG_NETUTILS_NTP
+#define NETUTILS_NTP_TIMEZONE 8
+#define NETUTILS_NTP_HOSTNAME "ntp.rt-thread.org"
+#define NETUTILS_NTP_HOSTNAME2 "cn.ntp.org.cn"
+#define NETUTILS_NTP_HOSTNAME3 "edu.ntp.org.cn"
+#define PKG_USING_NETUTILS_LATEST_VERSION
 #define PKG_USING_AT_DEVICE
 #define PKG_AT_INIT_BY_THREAD
 #define AT_DEVICE_SIM800C
@@ -298,6 +308,8 @@
 #define BSP_USING_UART2
 #define BSP_USING_UART3
 #define BSP_USING_UART4
+#define BSP_USING_ONCHIP_RTC
+#define BSP_RTC_USING_LSE
 #define BSP_USING_SDIO
 
 /* Board extended module Drivers */
