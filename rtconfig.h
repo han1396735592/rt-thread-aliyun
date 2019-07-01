@@ -136,8 +136,6 @@
 /* protocol stack implement */
 
 #define SAL_USING_LWIP
-#define SAL_USING_AT
-#define SAL_USING_TLS
 #define SAL_USING_POSIX
 
 /* Network interface device */
@@ -194,14 +192,6 @@
 
 /* AT commands */
 
-#define RT_USING_AT
-#define AT_DEBUG
-#define AT_USING_CLIENT
-#define AT_CLIENT_NUM_MAX 1
-#define AT_USING_SOCKET
-#define AT_USING_CLI
-#define AT_CMD_MAX_LEN 128
-#define AT_SW_VERSION_NUM 0x10300
 
 /* VBUS(Virtual Software BUS) */
 
@@ -230,16 +220,6 @@
 #define NETUTILS_NTP_HOSTNAME2 "cn.ntp.org.cn"
 #define NETUTILS_NTP_HOSTNAME3 "edu.ntp.org.cn"
 #define PKG_USING_NETUTILS_LATEST_VERSION
-#define PKG_USING_AT_DEVICE
-#define PKG_AT_INIT_BY_THREAD
-#define AT_DEVICE_SIM800C
-#define AT_DEVICE_SOCKETS_NUM 6
-#define AT_DEVICE_NAME "uart3"
-#define AT_DEVICE_RECV_BUFF_LEN 8192
-#define AT_DEVICE_POWER_PIN -1
-#define AT_DEVICE_STATUS_PIN -1
-#define PKG_USING_AT_DEVICE_LATEST_VERSION
-#define PKG_AT_DEVICE_VER_NUM 0x99999
 
 /* IoT Cloud */
 
@@ -251,19 +231,10 @@
 #define PKG_USING_ALI_IOTKIT_MQTT
 #define PKG_USING_ALI_IOTKIT_MQTT_SAMPLE
 #define PKG_USING_ALI_IOTKIT_MQTT_DIRECT
-#define PKG_USING_ALI_IOTKIT_MQTT_TLS
 #define PKG_USING_ALI_IOTKIT_LATEST_VERSION
 
 /* security packages */
 
-#define PKG_USING_MBEDTLS
-
-/* Select Root Certificate */
-
-#define MBEDTLS_AES_ROM_TABLES
-#define MBEDTLS_ECP_WINDOW_SIZE 2
-#define MBEDTLS_SSL_MAX_CONTENT_LEN 8192
-#define PKG_USING_MBEDTLS_V260
 
 /* language packages */
 
@@ -298,6 +269,8 @@
 #define BSP_USING_USB_TO_USART
 #define BSP_USING_COM2
 #define BSP_USING_COM3
+#define PHY_USING_LAN8720A
+#define BSP_USING_ETH
 #define BSP_USING_SDCARD
 
 /* On-chip Peripheral Drivers */
@@ -314,11 +287,5 @@
 
 /* Board extended module Drivers */
 
-#define AT_DEVICE_USING_SIM800C
-#define SIM800C_SAMPLE_CLIENT_NAME "uart3"
-#define SIM800C_SAMPLE_POWER_PIN -1
-#define SIM800C_SAMPLE_STATUS_PIN -1
-#define SIM800C_SAMPLE_RECV_BUFF_LEN 512
-#define AT_DEVICE_SIM800C_SAMPLE
 
 #endif
