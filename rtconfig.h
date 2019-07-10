@@ -287,5 +287,7 @@
 
 /* Board extended module Drivers */
 
+#define RT_USING_LED
+#define RT_USING_LED_SH_C1P
 
 #endif

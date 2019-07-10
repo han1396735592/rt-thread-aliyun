@@ -325,6 +325,22 @@ menu "Board extended module Drivers"
 
 
         endif
+    menuconfig RT_USING_LED
+    	bool "RT_USING_LED"
+    	default y
+
+    	if RT_USING_LED
+    		config RT_USING_LED_SH_C1P
+		        bool "ENABLE CH-C1P"
+		       # select RT_USING_LED	    
+		        default y
+		    config RT_USING_LED_SH_C1X
+		        bool "ENABLE CH-C1X"
+		        # select RT_USING_LED
+		    
+		        default n
+		endif
+
 
 
 
