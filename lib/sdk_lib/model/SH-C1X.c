@@ -15,9 +15,9 @@
 
 #include "LEDLIB.h"
 
-#define BROADCAST_ID            (0xff) /**< å¹¿æ’­ID */
-#define C1X_KEYWORD_HEAD        (0xa1) //åŒ…å¤´å…³é”®å­—
-#define C1X_KEYWORD_TAIL        (0x51)//åŒ…å°¾å…³é”®å­—
+#define BROADCAST_ID            (0xff) /**< ¹ã²¥ID */
+#define C1X_KEYWORD_HEAD        (0xa1) //°üÍ·¹Ø¼ü×Ö
+#define C1X_KEYWORD_TAIL        (0x51)//°üÎ²¹Ø¼ü×Ö
 
 #ifdef USE_PACT_ID
 #define SetLdeID(ledid)     Buf->id = ((ledid==SDK_BROADCAST)||(ledid==SDK_BROADCAST_OLD))?BROADCAST_ID:ledid
@@ -50,7 +50,7 @@ static uint8_t Calculating(LED_Pack_t *Buf,uint8_t ledid,const uint8_t *Param,ui
     {
         Checksum += *pCheck++;
     }
-    *pCheck++ = Checksum; //å†™å…¥æ ¡éªŒå’Œ
+    *pCheck++ = Checksum; //Ð´ÈëÐ£ÑéºÍ
     *pCheck = C1X_KEYWORD_TAIL;
 
     return Buf->Length;

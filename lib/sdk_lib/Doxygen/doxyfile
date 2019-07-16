@@ -44,7 +44,7 @@ PROJECT_NUMBER         = V1.0.03
 # for a project that appears at the top of each page and should give viewer a
 # quick idea about the purpose of the project. Keep the description short.
 
-PROJECT_BRIEF          = "LED æ§åˆ¶å¡ åµŒå…¥å¼å¼€å‘ SDKä½¿ç”¨è¯´æ˜"
+PROJECT_BRIEF          = "LED ¿ØÖÆ¿¨ Ç¶ÈëÊ½¿ª·¢ SDKÊ¹ÓÃËµÃ÷"
 
 # With the PROJECT_LOGO tag one can specify a logo or an icon that is included
 # in the documentation. The maximum height of the logo should not exceed 55

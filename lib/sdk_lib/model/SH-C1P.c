@@ -15,7 +15,7 @@
 
 
 #include "LEDLIB.h"
-#define BROADCAST_ID            (0x00) /**< 广播ID */
+#define BROADCAST_ID            (0x00) /**< �㲥ID */
 
 
 static uint8_t Calculating(LED_Pack_t *Buf,uint8_t ledid,size_t ParaSize)

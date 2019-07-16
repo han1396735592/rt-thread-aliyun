@@ -1,0 +1,26 @@
+import os
+import rtconfig
+from building import *
+
+
+
+cwd = GetCurrentDir()
+src=[]
+if GetDepend(['RT_USING_LED']):
+	src += Glob('LEDLib.c')
+	src += Glob('GPL/GPL-string.c')
+	src += Glob('rt-led.c')
+
+if GetDepend(['RT_USING_LED_SH_C1P']):
+	src += Glob('model/SH-C1P.c')
+if GetDepend(['RT_USING_LED_SH_C1X']):
+	src += Glob('model/SH-C1X.c')
+
+path =  [cwd]
+path += [cwd+'/module']
+path += [cwd+'/GPL']
+
+CPPDEFINES = ['STM32F407xx','SH_C1P','Compile_MDKARM']
+
+group = DefineGroup('LED_SDK', src, depend = ['RT_USING_LED'], CPPPATH = path, LOCAL_CCFLAGS = '', CPPDEFINES = CPPDEFINES)
+Return('group')

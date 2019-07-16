@@ -289,5 +289,6 @@
 
 #define RT_USING_LED
 #define RT_USING_LED_SH_C1P
+#define RT_LED_USEING_UART_NAME "uart3"
 
 #endif

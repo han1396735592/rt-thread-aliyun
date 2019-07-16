@@ -331,14 +331,14 @@ menu "Board extended module Drivers"
 
     	if RT_USING_LED
     		config RT_USING_LED_SH_C1P
-		        bool "ENABLE CH-C1P"
-		       # select RT_USING_LED	    
+		        bool "ENABLE CH-C1P"	    
 		        default y
 		    config RT_USING_LED_SH_C1X
 		        bool "ENABLE CH-C1X"
-		        # select RT_USING_LED
-		    
 		        default n
+		    config RT_LED_USEING_UART_NAME
+                string "RT_LED_USEING_UART_NAME"
+                default "uart3"
 		endif
 
 
